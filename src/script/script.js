@@ -31,6 +31,15 @@ ScrollReveal().reveal(".sobre", {
   reset: true,
 });
 
+ScrollReveal().reveal(".produto", {
+  delay: 200,
+  distance: "40px",
+  origin: "bottom",
+  duration: 800,
+  interval: 100, // anima um por um
+  reset: true,
+});
+
 ScrollReveal().reveal(".contato", {
   delay: 200,
   distance: "50px",
@@ -60,7 +69,7 @@ document.querySelector(".form-contato").addEventListener("submit", function (e) 
     return;
   }
 
-  fetch("https://formsubmit.co/ajax/gbielbarros6@gmail.com.com", {
+  fetch("https://formsubmit.co/ajax/gbielbarros6@gmail.com", {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -80,3 +89,14 @@ document.querySelector(".form-contato").addEventListener("submit", function (e) 
       alert("Erro ao enviar. Tente novamente mais tarde.");
     });
 });
+
+// Carrinho de compras
+const iconeCarrinho = document.getElementById("icone-carrinho");
+const painelCarrinho = document.getElementById("painel-carrinho");
+const fecharCarrinho = document.getElementById("fechar-carrinho");
+const listaItens = document.getElementById("lista-itens");
+const contadorCarrinho = document.getElementById("contador-carrinho");
+const valorTotal = document.getElementById("valor-total");
+const botaoFinalizar = document.getElementById("finalizar-pedido");
+
+
