@@ -42,6 +42,7 @@ Editar
 cd projeto_EntreN-s_site
 Abra o arquivo index.html no navegador ou use uma extensão como Live Server (VSCode).
 
+
 📂 Estrutura do Projeto
 css
 Copiar
@@ -63,6 +64,7 @@ projeto_EntreN-s_site/
 │       ├── bolsaBege.jpg
 │       ├── bolsaVermelha.jpg
 │       └── bolsacolorida.jpg
+
 📞 Contato
 Se quiser entrar em contato comigo para melhorias, feedback ou dúvidas:
 
